@@ -1,0 +1,39 @@
+name: Build Saypen PIN Maker release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: New version tag matching the app version (for example v1.0.0)
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      # Build the commit/branch selected in the "Run workflow" dialog.  The
+      # release tag does not exist yet, so it must not be used as checkout ref.
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-build.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/audit_source.py
+      - run: python tools/gui_smoke.py
+      - name: Check version tag
+        env:
+          RELEASE_TAG: '${{ inputs.tag }}'
+        run: python -c "import os; from saypen_pin import __version__; assert os.environ['RELEASE_TAG'] == 'v' + __version__"
+      - run: python tools/build_release.py
+      - name: Create draft release
+        env:
+          GH_TOKEN: '${{ github.token }}'
+          RELEASE_TAG: '${{ inputs.tag }}'
+        shell: pwsh
+        run: |
+          if ($env:RELEASE_TAG -notmatch '^v\d+\.\d+\.\d+$') { throw 'Invalid release tag' }
+          gh release create "$env:RELEASE_TAG" dist/*-windows-x64.zip dist/*-source.zip dist/SHA256SUMS-*.txt --target "${{ github.sha }}" --draft --title "Saypen PIN Maker $env:RELEASE_TAG" --notes-file NOTICE.md
