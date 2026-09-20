@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "id": "pictory-horacek-8",
+  "title": "Pictory · 빼뜨르 호라체크 8권",
+  "description": "RTR-4000BS V0042에서 24개 경량화 PIN의 실기 재생 성공을 사용자가 확인했습니다.",
+  "adapter": "saypen-xor-book-v1",
+  "books": [
+    {
+      "title": "Beep bepp",
+      "tracks": [
+        {
+          "id": "horacek-299000",
+          "mode": "Read",
+          "raw_oid": 299000,
+          "suggested_filename": "299000.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299002",
+          "mode": "Chant",
+          "raw_oid": 299002,
+          "suggested_filename": "299002.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        },
+        {
+          "id": "horacek-299004",
+          "mode": "Song",
+          "raw_oid": 299004,
+          "suggested_filename": "299004.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        }
+      ]
+    },
+    {
+      "title": "Strawberries are Red",
+      "tracks": [
+        {
+          "id": "horacek-299048",
+          "mode": "Read",
+          "raw_oid": 299048,
+          "suggested_filename": "299048.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299050",
+          "mode": "Chant",
+          "raw_oid": 299050,
+          "suggested_filename": "299050.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        },
+        {
+          "id": "horacek-299052",
+          "mode": "Song",
+          "raw_oid": 299052,
+          "suggested_filename": "299052.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        }
+      ]
+    },
+    {
+      "title": "What is Black And White?",
+      "tracks": [
+        {
+          "id": "horacek-299096",
+          "mode": "Read",
+          "raw_oid": 299096,
+          "suggested_filename": "299096.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299098",
+          "mode": "Chant",
+          "raw_oid": 299098,
+          "suggested_filename": "299098.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        },
+        {
+          "id": "horacek-299100",
+          "mode": "Song",
+          "raw_oid": 299100,
+          "suggested_filename": "299100.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        }
+      ]
+    },
+    {
+      "title": "Flutter by, butterfly",
+      "tracks": [
+        {
+          "id": "horacek-299144",
+          "mode": "Read",
+          "raw_oid": 299144,
+          "suggested_filename": "299144.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299146",
+          "mode": "Chant",
+          "raw_oid": 299146,
+          "suggested_filename": "299146.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        },
+        {
+          "id": "horacek-299148",
+          "mode": "Song",
+          "raw_oid": 299148,
+          "suggested_filename": "299148.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        }
+      ]
+    },
+    {
+      "title": "Hello, little bird",
+      "tracks": [
+        {
+          "id": "horacek-299192",
+          "mode": "Read",
+          "raw_oid": 299192,
+          "suggested_filename": "299192.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299194",
+          "mode": "Chant",
+          "raw_oid": 299194,
+          "suggested_filename": "299194.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        },
+        {
+          "id": "horacek-299196",
+          "mode": "Song",
+          "raw_oid": 299196,
+          "suggested_filename": "299196.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        }
+      ]
+    },
+    {
+      "title": "Run, mouse run!",
+      "tracks": [
+        {
+          "id": "horacek-299240",
+          "mode": "Read",
+          "raw_oid": 299240,
+          "suggested_filename": "299240.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299242",
+          "mode": "Chant",
+          "raw_oid": 299242,
+          "suggested_filename": "299242.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299244",
+          "mode": "Song",
+          "raw_oid": 299244,
+          "suggested_filename": "299244.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        }
+      ]
+    },
+    {
+      "title": "This little cat",
+      "tracks": [
+        {
+          "id": "horacek-299288",
+          "mode": "Read",
+          "raw_oid": 299288,
+          "suggested_filename": "299288.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299290",
+          "mode": "Chant",
+          "raw_oid": 299290,
+          "suggested_filename": "299290.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        },
+        {
+          "id": "horacek-299292",
+          "mode": "Song",
+          "raw_oid": 299292,
+          "suggested_filename": "299292.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        }
+      ]
+    },
+    {
+      "title": "Choo choo",
+      "tracks": [
+        {
+          "id": "horacek-299336",
+          "mode": "Read",
+          "raw_oid": 299336,
+          "suggested_filename": "299336.mp3",
+          "evidence": "user-reported compact playback success; BLE measured"
+        },
+        {
+          "id": "horacek-299338",
+          "mode": "Chant",
+          "raw_oid": 299338,
+          "suggested_filename": "299338.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        },
+        {
+          "id": "horacek-299340",
+          "mode": "Song",
+          "raw_oid": 299340,
+          "suggested_filename": "299340.mp3",
+          "evidence": "user-reported compact playback success; offset rule"
+        }
+      ]
+    }
+  ]
+}

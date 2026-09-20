@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saypen-pin-maker"
+version = "1.0.0"
+description = "Offline desktop PIN builder using user-supplied soundbook audio"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.gui-scripts]
+saypen-pin-maker = "saypen_pin.app:main"
+
+[tool.setuptools.packages.find]
+include = ["saypen_pin*"]
+
+[tool.setuptools.package-data]
+saypen_pin = ["profiles/*.json"]
